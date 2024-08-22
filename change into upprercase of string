@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class StringOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Accepting the string from the user
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        
+        // i. Find the length of the string
+        int length = input.length();
+        System.out.println("Length of the string: " + length);
+        
+        // ii. Convert all words to uppercase
+        String upperCaseString = input.toUpperCase();
+        System.out.println("String in uppercase: " + upperCaseString);
+    }
+}
