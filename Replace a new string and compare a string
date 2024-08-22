@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class StringManipulation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Accepting the first string from the user
+        System.out.print("Enter the first string: ");
+        String originalString = scanner.nextLine();
+        
+        // Accepting the new string to replace the original string
+        System.out.print("Enter the new string: ");
+        String newString = scanner.nextLine();
+        
+        // Replacing the original string with the new string
+        String replacedString = newString;
+        System.out.println("Replaced string: " + replacedString);
+        
+        // Accepting a second string to compare
+        System.out.print("Enter a string to compare: ");
+        String compareString = scanner.nextLine();
+        
+        // Comparing the two strings
+        if (replacedString.equals(compareString)) {
+            System.out.println("The strings are equal.");
+        } else {
+            System.out.println("The strings are not equal.");
+        }
+    }
+}
