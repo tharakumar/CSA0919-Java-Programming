@@ -1,0 +1,17 @@
+public class BuiltInExceptionExample {
+    public static void main(String[] args) {
+        try {
+            int[] array = new int[2];
+            System.out.println(array[5]); // ArrayIndexOutOfBoundsException
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Caught an ArrayIndexOutOfBoundsException: " + e.getMessage());
+        }
+
+        try {
+            String number = "abc";
+            int result = Integer.parseInt(number); // NumberFormatException
+        } catch (NumberFormatException e) {
+            System.out.println("Caught a NumberFormatException: " + e.getMessage());
+        }
+    }
+}

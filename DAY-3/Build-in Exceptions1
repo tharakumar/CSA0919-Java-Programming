@@ -1,0 +1,22 @@
+public class ExceptionHandlingExample {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0; // ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException: " + e.getMessage());
+        }
+
+        try {
+            int[] arr = new int[5];
+            arr[10] = 50; // ArrayIndexOutOfBoundsException
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException: " + e.getMessage());
+        }
+
+        try {
+            int number = Integer.parseInt("XYZ"); // NumberFormatException
+        } catch (NumberFormatException e) {
+            System.out.println("NumberFormatException: " + e.getMessage());
+        }
+    }
+}

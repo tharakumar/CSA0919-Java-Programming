@@ -1,0 +1,34 @@
+import java.util.Hashtable;
+
+public class BookDetails {
+    public static void main(String[] args) {
+        // Create a Hashtable to store book details
+        Hashtable<Integer, String> bookTable = new Hashtable<>();
+        
+        // i. Add 4 records
+        bookTable.put(1, "Alice");
+        bookTable.put(2, "Bob");
+        bookTable.put(3, "Charlie");
+        bookTable.put(4, "Diana");
+        
+        // ii. Remove a record using a specific key
+        int keyToRemove = 2; // Example key
+        bookTable.remove(keyToRemove);
+        System.out.println("Record with register number " + keyToRemove + " removed.");
+        
+        // iii. Check whether the 4th record is present or not using contains()
+        int fourthKey = 4;
+        if (bookTable.containsKey(fourthKey)) {
+            System.out.println("The 4th record is present.");
+        } else {
+            System.out.println("The 4th record is not present.");
+        }
+        
+        // iv. Display the size of the Hashtable
+        System.out.println("Size of the Hashtable: " + bookTable.size());
+        
+        // v. Clear the Hashtable
+        bookTable.clear();
+        System.out.println("Hashtable cleared.");
+    }
+}
